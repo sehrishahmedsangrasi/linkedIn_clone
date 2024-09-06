@@ -1,0 +1,527 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 243, 240);
+}
+nav{
+    height:3.3rem;
+    display: flex;
+    border-bottom: thin solid rgb(214, 211, 208);
+    background-color: rgb(255, 255, 255);
+}
+.nav-left{
+    height: 100%;
+    width:33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    padding-left: 6.5rem;
+
+}
+.nav-left>img{
+    width:2.4rem;
+    height: 2.2rem;
+    border-radius: 0.3rem;
+}
+.pics>input{
+    height: 2.1rem;
+    border-radius: 4rem;
+    background-color: rgb(237, 243, 247);
+    border:none;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 0.9rem;
+}
+.pics>input:hover{
+    border: thin solid rgb(214, 211, 208);
+    width: 19rem;
+}
+.pics{
+    display: flex;
+    align-items: center;
+    border:thin solid rgb(237, 243, 247);
+    border-radius: 0.3rem;
+    background-color: rgb(237, 243, 247);
+    height: 2.1rem;
+    width: 19rem;
+    padding-left: 0.8rem;
+    gap:0.3rem;
+
+}
+.nav-center{
+    height: 100%;
+    width:45%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 0.7rem;
+    color: rgb(102, 102, 102);
+    
+}
+.icon6>i{
+    background-color: rgb(232, 227, 220);
+    border: thick solid rgb(232, 227, 220);
+    border-radius: 7rem;   
+}
+
+.navicon{
+    width:5rem;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    align-items: center;
+    
+    
+}
+
+.icon6{
+    padding-top: 0.2rem;
+    border-right: thin solid rgb(214, 211, 208);
+}
+.navicon:hover{
+    color: black;
+}
+.navicon>i{
+    font-size:1rem;
+}
+.nav-right{
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 0.7rem;
+    height: 100%;
+    width:22%;
+    display: flex;
+    align-content: center;
+    gap:0.7rem;
+    padding-left: 0.7rem;
+}
+.nav-r{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.icn2>a{
+    color: rgb(175, 105, 0);
+    /* border-bottom: thick solid rgb(175, 105, 0); */
+    
+}
+.icn2>a:hover{
+    color: rgb(126, 77, 4);
+}
+.icn1{
+    color: rgb(102, 102, 102);
+}
+.icn1>i{
+    font-size: 1.4rem;
+    
+}
+.icn1:hover{
+    color: black;
+}
+
+.container{
+    display: grid;
+    min-height: 40rem;
+    width: 72rem;
+    margin: auto;
+    grid-template-columns: 20.5% 47.5% 28% ;
+    grid-template-rows: 6rem 17rem minmax(5rem,1fr);
+    gap: 0.5rem 1.2rem;
+    padding-top: 1.4rem;
+    
+}
+.box{
+    /* background-color: blue; */
+    border:thin solid rgb(214, 211, 208);
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+.box1{
+    grid-column: 1;
+    grid-row: 1/3;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 0.7rem;
+    position: relative;
+    z-index: -15;
+    overflow: hidden;
+
+    
+}
+.min1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.min_1{
+    padding-top: 1.2rem;
+    width:100%;
+    height: 10.3rem;
+    border-bottom:thin solid rgb(214, 211, 208); 
+    gap:0.4rem;   
+}
+.min_1>i{
+    border:thin solid black;
+    height: 4.5rem;
+    width:4.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(247, 249, 252);
+    margin-bottom: 0.7rem;
+    z-index: -11;
+    border: 0.2rem solid white;
+
+}
+#colr_box{
+    background-color: rgb(160, 180, 184);
+    width: 100%;
+    height: 3.7rem;
+    position: absolute;
+    top:0;
+    z-index: -15; 
+}
+#name{
+    font-size: 1rem;
+}
+#name1{
+    font-size: 0.7rem;
+}
+.gray_font{
+    color: rgb(112, 109, 109);
+    font-weight: 600;
+}
+.min_2{
+    padding-top: 1rem;
+    width: 100%;
+    height: 5.5rem;
+    border-bottom:thin solid rgb(214, 211, 208);
+}
+.connect{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+}
+.conct_right{
+    padding-left: 4rem;
+    font-weight: 500;
+    color: rgb(26, 116, 207);
+}
+.invite_1{
+    padding-top: 1rem;
+}
+.invite_2{
+    padding-top: 1.5rem;
+}
+.min_3{
+    padding-top: 1.1rem;
+    width: 100%;
+    height: 5rem;
+    border-bottom:thin solid rgb(214, 211, 208);
+    padding-left: 1rem;
+}
+
+.gray_font1{
+    color: rgb(112, 109, 109);
+    font-weight: 200;
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem;
+}
+.pkr>i{
+    color:rgb(255, 170, 0);
+    font-size: 0.8rem;
+    padding-right: 0.4rem;
+}
+.blur_blck{
+    color: rgba(69, 57, 57, 0.894);
+}
+.min_4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    
+}
+.min_4>div>i{
+    padding-right: 1rem;
+}
+.font-weight{
+    font-weight: 600;
+}
+.box2{
+    padding: 0px 0.5rem;
+    height:6rem;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+}
+.box2-top{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    height: 50%;
+    align-items: center;
+    padding-top:0.5rem
+}
+.box2-top>img{
+    width: 3.2rem;
+    border-radius: 50%;
+}
+.box2-top>input{
+    border-radius: 8rem;
+    border: 1px solid gray;
+    padding: 0px 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 90%;
+    height: 2.5rem;
+}
+.box2-bottom{
+    display: flex;
+    font-size: 1rem;
+    color: gray;
+    align-items: center;
+    height: 50%;
+    justify-content: space-around;
+    font-weight: 500;
+}
+.box2-left,.box2-mid,.box2-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.box3{
+    grid-column: 3;
+    grid-row: 1/3;
+    padding: 1rem;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    
+}
+.box3-top{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.5rem;
+    width: 100%;
+}
+.box3-top>img{
+    height: 0.6rem;
+    width: 0.64rem;
+}
+.box3-bottom{
+    display: flex;
+    flex-direction: row;
+    height: 17.5rem;
+    width: 100%;
+}
+.box3-right{
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+    width: 70%;
+    padding-top: 0.6rem;
+}
+.nandos,.ibex,.contoursoft{
+    display: flex;
+    flex-direction: column;
+    height: 6.4rem;
+    gap:0.3rem
+}
+.nandos>button,.ibex>button,.contoursoft>button{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    font-size:0.92rem ;
+    border-radius: 4rem;
+    width: 5.9rem;
+    height: 1.9rem;
+    border: thin solid black;
+    background-color: rgb(255, 255, 255);
+    gap: 0.3rem;
+    
+    
+}
+.box3-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    width: 30%;
+    
+}
+.box3-left>img{
+    height: 5rem;
+    border-radius: 50%;
+}
+.box3-recommend{
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    width: 100%;
+    padding-top: 1.1rem;
+    font-size: 0.8rem;
+    gap: 0.4rem;
+}
+.box3-recommend>i{
+    padding-top: 0.4rem;
+}
+.box4{
+    grid-row: 2/4;
+    min-height: 10rem;
+    background-color:rgb(245, 243, 240);
+    border: none;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    
+}
+
+
+/* .box4{
+    grid-column: 2;
+    grid-row: 2/4;
+    min-height: 300rem;
+
+} */
+
+.box5{
+    height:10rem;
+    font-family: apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 0.8rem;
+}
+.minb51{
+    display: flex;
+    padding-left: 1rem;
+    gap: 4.5rem;
+    border-bottom:thin solid rgb(214, 211, 208);
+    height: 7.3rem;
+    width: 100%;
+    padding-top: 0.9rem;
+}
+.minb5_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.minb5_left>a{
+    text-decoration: none;
+    color: rgb(26, 116, 207);
+}
+.minb5_left>a:hover{
+    text-decoration: underline;
+}
+.minb5_right{
+    padding-top: 1.4rem;
+    font-size: 1.2rem;
+}
+.minb52{
+    display: flex;
+    padding-top: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.minbox{
+    height:40rem;
+    width:100%;
+    background-color: rgb(157, 185, 66);
+    border: thin solid black;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.box6{
+    background-color: rgb(245, 243, 240);
+    border: thin solid rgb(245, 243, 240);
+    height: 26.5rem;
+    position: sticky;
+    top: 2rem; 
+    overflow: hidden;
+    width: 100%;
+}
+.box6-top{
+    height:17rem;
+    width:100%;
+    
+}
+.box6-top>img{
+    border: thin solid rgb(245, 243, 240);
+    border-radius: 0.5rem;
+}
+.box6-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+.box6-bottom>div{
+    padding-bottom:0.5rem ;
+}
+.box6-bottom>div>a{
+    padding: 0px 6px;
+    font-size: 0.83rem;
+    text-decoration: none;
+    color: rgb(123, 128, 138);   
+}
+.box6-bottom>div>a:hover{
+    text-decoration:  underline;
+    color:rgb(26, 116, 207);
+}
+.box6-btmImage{
+    display: flex;
+    align-items: center;
+    font-size: 0.83rem;
+    gap:5px;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+.post{
+    width: 100%;
+    min-height: 40rem;
+    margin-bottom: 1rem;
+    border-radius: 0.9rem;
+    font-size: 0.8rem;
+    border: 1px solid rgba(128, 128, 128, 0.426);
+    background-color: white;
+    overflow:hidden;
+}
+.post-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9rem 1.2rem;
+
+}
+.post-left{
+    display: flex;
+    gap: 0.7rem;
+}
+.post-left>img{
+    width: 3.8rem;
+    height:3rem
+}
+.post-right>i{
+    font-size: 1.3rem;
+    rotate: 45deg;
+}
+.post>p{
+    padding:0.5rem 1rem;
+    font-size: 1rem;
+}
+.post>img{
+    width: 100%;
+    height:30rem;
+
+}
+.post>p{
+    padding-right:0.7rem;
+}
